@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Dumbbell, LibraryBig, Apple, Calendar } from "lucide-react";
+import { Home, Dumbbell, HeartPulse, Apple, Calendar } from "lucide-react";
 
 const navItems = [
   { href: "/", label: "Home", icon: Home },
   { href: "/workouts", label: "Strength", icon: Dumbbell },
-  { href: "/exercises", label: "Library", icon: LibraryBig },
+  { href: "/recovery", label: "Recovery", icon: HeartPulse },
   { href: "/nutrition", label: "Nutrition", icon: Apple },
   { href: "/calendar", label: "Calendar", icon: Calendar },
 ];
