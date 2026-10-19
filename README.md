@@ -11,6 +11,7 @@ Forge Starter is a free, local-first workout, calendar, and nutrition tracker. I
 - Food, hydration, body-weight, and recipe tracking
 - Browser-local persistence
 - JSON backup and restore
+- Local FIT, TCX, GPX, and CSV activity import
 - Installable offline-capable PWA
 
 ## Not included
@@ -40,6 +41,12 @@ npm start
 Records are stored in the browser's `localStorage`. Clearing site data removes them. Use **Local Data → Export backup** regularly, and restore that JSON file when moving to another browser or computer.
 
 Starter does not send workout or nutrition records to Forge servers.
+
+## Import activities from Garmin Connect
+
+In Garmin Connect on the web, open an activity and use the settings menu to export the original FIT file, TCX, GPX, or CSV. In Forge Starter, open **Local Data**, choose **Import activity files**, and select one or more exports. Parsing happens in your browser; imported activities are saved locally and added to the calendar as completed workouts.
+
+Starter never asks for or stores Garmin credentials. Direct account synchronization is intentionally reserved for Forge Online's authorized provider connection.
 
 ## Customization
 

@@ -9,6 +9,7 @@ mkdir -p "$ROOT/dist"
 rm -f "$OUTPUT"
 cd "$ROOT"
 zip -qr "$OUTPUT" . \
-  -x '.git/*' 'node_modules/*' '.next/*' 'dist/*' '.DS_Store' '.env*'
+  -x '.git/*' 'node_modules/*' '.next/*' 'dist/*' '.DS_Store' '.env*' \
+     '.kiro/*' '.vscode/*' '*.tsbuildinfo' 'next-env.d.ts'
 
 echo "Created $OUTPUT"
